@@ -1,0 +1,36 @@
+version: "3"
+
+services:
+  node1:
+    build: ./node-server
+    container_name: node1
+    environment:
+      - PORT=3000
+    expose:
+      - "3000"
+
+  node2:
+    build: ./node-server
+    container_name: node2
+    environment:
+      - PORT=3001
+    expose:
+      - "3001"
+
+  node3:
+    build: ./node-server
+    container_name: node3
+    environment:
+      - PORT=3002
+    expose:
+      - "3002"
+
+  nginx:
+    build: ./nginx
+    container_name: nginx-lb
+    ports:
+      - "3003:80" # External port 3003 → Nginx port 80
+    depends_on:
+      - node1
+      - node2
+      - node3
