@@ -15,7 +15,6 @@ We run:
 Each Node server prints its **port number** in the browser to visualize which server handled the request.
 
 ---
----
 ### ⚙️ Prerequisites
 
 Before you start, ensure you have:
@@ -31,7 +30,7 @@ Before you start, ensure you have:
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/kunal950/Load-Balancing-using-Docker.git
-cd <Load-Balancing>
+cd Load-Balancing
 ```
 ### 2. Build and Start Containers
 
