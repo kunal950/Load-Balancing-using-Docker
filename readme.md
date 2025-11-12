@@ -1,4 +1,4 @@
-# 🚀 Nginx Load Balancing with Node.js and Docker
+#  Nginx Load Balancing with Node.js and Docker
 
 
 This project demonstrates how to set up **Nginx load balancing** for multiple **Node.js servers** running inside **Docker containers**.  
@@ -6,7 +6,7 @@ It helps understand how Nginx distributes traffic, handles server failures, and 
 
 ---
 
-### 🧩 Project Overview
+###  Project Overview
 
 We run:
 - 3 Node.js servers (each showing its port)
@@ -15,7 +15,7 @@ We run:
 Each Node server prints its **port number** in the browser to visualize which server handled the request.
 
 ---
-### ⚙️ Prerequisites
+###  Prerequisites
 
 Before you start, ensure you have:
 
@@ -25,7 +25,7 @@ Before you start, ensure you have:
 
 ---
 
-# 🚀 Setup Instructions
+#  Setup Instructions
 
 ### 1. Clone the Repository
 ```bash
@@ -44,7 +44,7 @@ This starts:
 
 ---
 
-### 🌐 Test the Load Balancer
+###  Test the Load Balancer
 Open your browser and visit:
 
 ```bash
@@ -63,7 +63,7 @@ This confirms Nginx is distributing requests evenly.
 
 --- 
 
-### 🧪 Test Fault Tolerance
+###  Test Fault Tolerance
 
 Stop one Node server (e.g., node2):
 
@@ -79,7 +79,7 @@ docker start node2
 ```
 ---
 
-### 🖥️ Run Each Server on Different Machines
+###  Run Each Server on Different Machines
 
 If you run servers on different hosts, update your nginx.conf:
 
@@ -99,7 +99,7 @@ Then rebuild your Nginx container:
 docker-compose up -d --build nginx
 ```
 ---
-### 🧹 Stop and Clean Up
+###  Stop and Clean Up
 
 To stop all containers:
 
@@ -113,7 +113,7 @@ docker-compose up -d --build
 ```
 ---
 
-### 🧠 Learning Goals
+###  Learning Goals
 
 - Understand Nginx reverse proxy and load balancing
 - Learn Docker networking and container orchestration
